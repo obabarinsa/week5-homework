@@ -38,10 +38,10 @@ class ComicsController <ApplicationController
 	 	m = Comic.new
    	 	m.title = params['title']
     	m.description = params['description']
-   		m.image_url = params['images']
+   		m.image_url = params['image_url']
    		m.save
 
-        redirect_to "/movies"
+        redirect_to "/comics"
 
 	end 
 
