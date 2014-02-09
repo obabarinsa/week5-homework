@@ -12,10 +12,11 @@ class ComicsController <ApplicationController
 	end
 
 
-	def toast 
-		the_comic_id = params["comic_id"]
-		m = Comic.find_by(:id => the_comic_id)
-		m.destroy
+	def destroy 
+		@the_comic_id = params["comic_id"]
+		@m = Comic.find_by(:id => @the_comic_id)
+		@m.destroy
+		
 		redirect_to "/comics"
 	end 
 

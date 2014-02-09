@@ -6,7 +6,7 @@ Comicbin::Application.routes.draw do
   get "/comics" => 'comics#index'
   get "/comics/new" => 'comics#new'
   get "/comics/create" => 'comics#create'
-  get "/comics/delete/:comic_id" => 'comics#toast'
+  get "/comics/delete/:comic_id" => 'comics#destroy'
   get "/comics/:comic_id" => 'comics#show'
 
 

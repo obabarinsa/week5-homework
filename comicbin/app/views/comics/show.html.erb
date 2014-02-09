@@ -14,6 +14,8 @@
          ATTACH A CLASS of 'btn btn-warning' TO THIS LINK.
          ALSO INCLUDE A CONFIRMATION MESSAGE 'Are you sure?' -->
 
+  <%= link_to "Delete Comic", "/comics/delete/#{@comics.id}" , class: 'btn btn-warning', data: { confirm: 'Are you sure?' } %>
       
+
   </div>
 </div>
