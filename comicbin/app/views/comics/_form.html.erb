@@ -13,23 +13,37 @@
         </ul>
       </div>
     <% end %>
-
+<div class="row">
+  <div class="col-md-6">
+    <form action="/comics/create">
     <div class="form-group">
       <!-- DISPLAY A TITLE LABEL -->
       <!-- DISPLAY A TEXT FIELD AND ATTACH THE CLASS OF 'form-control' TO THIS FIELD -->
+      <label for="title">Comic Title:</label>
+      <input type="text" name="title" class="form-control" id="title" placeholder="Enter movie title here">
     </div>
     <div class="form-group">
       <!-- DISPLAY A DESCRIPTION LABEL -->
       <!-- DISPLAY A TEXT FIELD AND ATTACH THE CLASS OF 'form-control' TO THIS FIELD -->
+      <label for="description">Description:</label>
+      <input type="text" name="description" class="form-control" id="description" placeholder="Enter description here">
     </div>
     <div class="form-group">
       <!-- DISPLAY AN IMAGE LABEL -->
       <!-- DISPLAY A TEXT FIELD ATTACH THE CLASS OF 'form-control' TO THIS FIELD -->
+      <label for="image">Image:</label>
+        <input type="text" name="image_url" class="form-control" id="image_url" placeholder="Enter URL to a comic image">
     </div>
     <div class="actions">
       <!-- DISPLAY A SUBMIT BUTTON WITH A CLASS OF 'btn btn-primary' -->
+       <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
     </div>
 
   <% end %>
   </div>
 </div>
+<!-- added two divs here -->
+</div>
+</div>
+
