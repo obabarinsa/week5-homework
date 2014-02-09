@@ -16,12 +16,13 @@ class ComicsController <ApplicationController
 		@the_comic_id = params["comic_id"]
 		@m = Comic.find_by(:id => @the_comic_id)
 		@m.destroy
-		
+
 		redirect_to "/comics"
 	end 
 
 
 	def new 
+		@comic = Comic.new
 	end 
 
 	def create 
